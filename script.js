@@ -17,17 +17,17 @@ function exercicioTres(){
 
   if(playerUm === playerDois){
     alert("Empate");
-  } else {
+  }else {
     if(sorteio === 0){
       if(playerUm < playerDois){
         alert("Player 1 teve o menor número");
-      } else {
+      }else {
         alert("Player 2 teve o menor número");
       }
-    } else {
+    }else {
       if(playerUm > playerDois){
         alert("Player 1 teve o maior número");
-      } else {
+      }else {
         alert("Player 2 teve o maior número");
       }
     }
