@@ -8,15 +8,20 @@
 </head>
 <body>
   <h1>Chame as funções para executar os códigos</h1>
+
   <div>
-    <button onclick="soma()">+</button>
-    <button onclick="subtracao()">-</button>
-    <button onclick="multiplicacao()">*</button>
-    <button onclick="divisao()">/</button>
-    <p id="output">resultado</p>
+    <button onclick="calcular('+', 5)">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <p id="output">Resultado calculo</p>
+  </div>
+
+  <div>
+    <button onclick="exercicioCinco()">Calcular área</button>
+    <p id="outputArea">Total área</p>
   </div>
 
   <script src="script.js"></script>
-  <script src="exercicio04.js"></script>
 </body>
 </html>

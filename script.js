@@ -33,3 +33,42 @@ function exercicioTres(){
     }
   }
 }
+
+/* EXERCICIO 04 */
+
+// let numero = parseFloat(prompt("Digite um número"));
+const output = document.querySelector("#output");
+output.innerHTML = numero;
+
+function calcular(simbolo){
+  switch(simbolo){
+    case '+':
+      let numeroSoma = parseFloat(prompt("Digite um número"));
+      output.innerHTML = (numero += numeroSoma);
+    break;
+    case '-':
+      let numeroSub = parseFloat(prompt("Digite um número"));
+      output.innerHTML = (numero -= numeroSub);
+    break;
+    case '*':
+      let numeroMult = parseFloat(prompt("Digite um número"));
+      output.innerHTML = (numero *= numeroMult);
+    break;
+    case '/':
+      let numeroDiv = parseFloat(prompt("Digite um número"));
+      output.innerHTML = (numero /= numeroDiv);
+    break;
+  }
+}
+
+function exercicioCinco(){
+  const altura = parseInt(prompt("Digite a altura"));
+  const largura = parseInt(prompt("Digite a largura"));
+  const outputArea = document.querySelector("#outputArea");
+
+  if(isNaN(altura) || isNaN(largura)){
+    throw new Error(outputArea.innerHTML = "Mula")
+  }else{
+    outputArea.innerHTML = (altura * largura);
+  }
+}
