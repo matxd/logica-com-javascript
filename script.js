@@ -67,8 +67,8 @@ function exercicioCinco(){
   const outputArea = document.querySelector("#outputArea");
 
   if(isNaN(altura) || isNaN(largura)){
-    throw new Error(outputArea.innerHTML = "Mula")
+    throw new Error(outputArea.innerHTML = "Digite um número");
   }else{
-    outputArea.innerHTML = (altura * largura);
+    outputArea.innerHTML = `A área total é: ${(altura * largura)}`;
   }
 }
