@@ -84,3 +84,13 @@ function exercicioSeis(){
   }
 }
 
+function exercicioSete(){
+  const numeros = [25, 30, 45, 28, 0, 12, 78, 64];
+  let somaPar = 0;
+  for(let i = 0; i < numeros.length; i++){
+    if(numeros[i] % 2 === 0){
+      (somaPar += numeros[i]);
+    }
+  }
+  alert(somaPar);
+}
