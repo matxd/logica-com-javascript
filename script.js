@@ -94,3 +94,16 @@ function exercicioSete(){
   }
   alert(somaPar);
 }
+
+const caneta = {
+  preco: 2.50,
+  estoque: 10,
+  comprar: function(quantidade){
+    if(!quantidade){
+      quantidade = 1;
+    }
+    console.log("Compra efetuada");
+    this.estoque -= quantidade;
+    console.log(this.estoque);
+  }
+}
