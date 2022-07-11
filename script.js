@@ -17,17 +17,17 @@ function exercicioTres(){
 
   if(playerUm === playerDois){
     alert("Empate");
-  }else {
+  }else{
     if(sorteio === 0){
       if(playerUm < playerDois){
         alert("Player 1 teve o menor número");
-      }else {
+      }else{
         alert("Player 2 teve o menor número");
       }
-    }else {
+    }else{
       if(playerUm > playerDois){
         alert("Player 1 teve o maior número");
-      }else {
+      }else{
         alert("Player 2 teve o maior número");
       }
     }
@@ -38,7 +38,7 @@ function exercicioTres(){
 
 // let numero = parseFloat(prompt("Digite um número"));
 const output = document.querySelector("#output");
-output.innerHTML = numero;
+// output.innerHTML = numero;
 
 function calcular(simbolo){
   switch(simbolo){
@@ -72,3 +72,15 @@ function exercicioCinco(){
     outputArea.innerHTML = `A área total é: ${(altura * largura)}`;
   }
 }
+
+function exercicioSeis(){
+  const diasSemana = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira",  "Sexta-Feira", "Sábado"];
+  const dataUsuario = new Date().getDay();
+  for(let i = 0; i < diasSemana.length; i++){
+    if(i === dataUsuario){
+      alert(`Hoje é ${diasSemana[i]}`);
+      break;
+    }
+  }
+}
+
