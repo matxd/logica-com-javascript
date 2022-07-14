@@ -34,10 +34,10 @@ function exercicioTres(){
   }
 }
 
-/* EXERCICIO 04 */
+/* EXERCICIO 04 - RETIRAR COMENTARIOS NOS CÓDIGOS ABAIXO */
 
 // let numero = parseFloat(prompt("Digite um número"));
-const output = document.querySelector("#output");
+// const output = document.querySelector("#output");
 // output.innerHTML = numero;
 
 function calcular(simbolo){
@@ -122,3 +122,15 @@ function vetor(){
     console.log(escreva)
   }
 }
+
+class Veiculo{
+  constructor(modelo, marca, cor, ano){
+    this.modelo = modelo
+    this.marca = marca
+    this.cor = cor
+    this.ano = ano
+  }
+}
+
+let carroUm = new Veiculo("X6", "BMW", "Branca", 2021)
+let carroDois = new Veiculo("911", "Porsche", "Azul", 2019)
