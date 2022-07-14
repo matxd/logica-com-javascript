@@ -124,13 +124,28 @@ function vetor(){
 }
 
 class Veiculo{
-  constructor(modelo, marca, cor, ano){
+  constructor(modelo, fabricante, cor, ano){
     this.modelo = modelo
-    this.marca = marca
+    this.fabricante = fabricante
     this.cor = cor
     this.ano = ano
   }
+  metodoTeste(){
+    this.ano += 1
+  }
 }
 
-let carroUm = new Veiculo("X6", "BMW", "Branca", 2021)
-let carroDois = new Veiculo("911", "Porsche", "Azul", 2019)
+class Carro extends Veiculo{
+  constructor(modelo, fabricante, cor, ano){
+    super(modelo, fabricante, cor, ano)
+  }
+}
+
+class Moto extends Veiculo{
+  constructor(modelo, fabricante, cor, ano){
+    super(modelo, fabricante, cor, ano)
+  }
+}
+
+let carro = new Carro("X6", "BMW", "Branca", 2021)
+let moto = new Moto("Z1000", "Kawasaki", "Verde", 2015)
