@@ -37,7 +37,7 @@ function exercicioTres(){
 /* EXERCICIO 04 */
 
 // let numero = parseFloat(prompt("Digite um número"));
-const output = document.querySelector("#output");
+// const output = document.querySelector("#output");
 // output.innerHTML = numero;
 
 function calcular(simbolo){
@@ -107,3 +107,8 @@ const caneta = {
     console.log(this.estoque);
   }
 }
+
+let teste = ["Goiás", "Rio de Janeiro", "Amazonas", "Paraná"]
+console.log(teste)
+teste.splice(1,0, "Distrito Federal")
+console.log(teste)
